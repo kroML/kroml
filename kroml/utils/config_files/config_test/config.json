@@ -1,0 +1,49 @@
+{
+  "input_files": [
+    {
+      "file_name": "result.csv",
+      "variable_name": "daco_df",
+      "format_strategy": "strategy2",
+      "run": "all"
+    },
+    {
+      "file_name": "result.xlsx",
+      "variable_name": "df",
+      "format_strategy": "strategy1",
+      "run": "all"
+    },
+    {
+      "file_name": "result.pickle",
+      "variable_name": "excel_df",
+      "format_strategy": "strategy2",
+      "run": "all"
+    }
+  ],
+  "test_extensions": [
+    {
+      "file_name": "result.picklecsv",
+      "variable_name": "data_df"
+    },
+    {
+      "file_name": "resu'fd.csv.exe",
+      "variable_name": "data_df"
+    },
+    {
+      "file_name": "pic.kle",
+      "variable_name": "data_df"
+    },
+    {
+      "file_name": "pickle",
+      "variable_name": "data_df"
+    },
+    {
+      "file_name": ".",
+      "variable_name": "data_df"
+    },
+    {
+      "file_name": "result.xlsx",
+      "sheet_name": "Sheeeeeeet1",
+      "variable_name": "excel_df"
+    }
+  ]
+}

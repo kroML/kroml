@@ -22,8 +22,8 @@ class ConfigParser:
         ini_files = []
         json_files = []
 
-        for root, _, files in os.walk(self.config_dir):
-            for file in files:
+        for r, _, f in os.walk(self.config_dir):
+            for file in f:
                 parts = file.rpartition('.')
                 if parts[1] == '.':
                     extension = parts[2]
@@ -31,9 +31,9 @@ class ConfigParser:
                     extension = ''
 
                 if extension == 'ini':
-                    ini_files.append(root + file)
+                    ini_files.append(r + file)
                 elif extension == 'json':
-                    json_files.append(root + file)
+                    json_files.append(r + file)
                 else:
                     continue
 
@@ -61,10 +61,6 @@ class ConfigParser:
         return default
 
     def get_ini_attrs(self, files_arr):
-        """
-        :param files_arr:
-        :return:
-        """
 
         for file in files_arr:
             self.config_ini.read(file)
@@ -81,10 +77,6 @@ class ConfigParser:
                     self.set_attr(str(attr).lower(), self.config_ini[section][attr])
 
     def get_json_attrs(self, files_arr):
-        """
-        :param files_arr:
-        :return:
-        """
 
         for file_path in files_arr:
             with open(file_path, "r") as json_file:
@@ -93,10 +85,6 @@ class ConfigParser:
                     self.set_attr(key, value)
 
     def update_config(self, run_json: str):
-        """
-        :param run_json:
-        :return:
-        """
         run_json_dict = json.loads(run_json)
         for key, value in run_json_dict.items():
             self.set_attr(key, value, overwrite=True)

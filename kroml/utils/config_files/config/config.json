@@ -1,0 +1,44 @@
+{
+  "input_files": [
+    {
+      "file_name": "new.csv",
+      "file_type": "csv",
+      "variable_name": "input_df1",
+      "input_type": "pandas",
+      "run": "execute"
+    },
+    {
+      "file_name": "data.xlsx",
+      "variable_name": "input_df2",
+      "format_strategy": "strategy2",
+      "input_type": "spark",
+      "run": "execute"
+    },
+    {
+      "file_name": "datadump1.csv",
+      "variable_name": "df_lda_in",
+      "format_strategy": "AzD_LDA_strategy",
+      "input_type": "pandas",
+      "run": "all"
+    }
+  ],
+
+  "output_files": [
+    {
+      "file_name": "result.csv",
+      "variable_name": "input_df1",
+      "format_strategy": "strategy2",
+      "output_type": "text"
+    },
+    {
+      "file_name": "data.xlsx",
+      "variable_name": "input_df2",
+      "format_strategy": "strategy2",
+      "output_type": "spark"
+    },
+    {
+      "file_name": "Azd_LDA_result.xlsx",
+      "variable_name": "df_lda_out"
+    }
+  ]
+}

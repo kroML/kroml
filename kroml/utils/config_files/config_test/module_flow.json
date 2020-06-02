@@ -1,0 +1,11 @@
+{
+  "modules": [
+    {
+      "param": {
+        "input_df": "input_df1",
+        "output_df": "output_df2"
+      },
+      "class_name": "Haf"
+    }
+  ]
+}

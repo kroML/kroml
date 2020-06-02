@@ -1,6 +1,6 @@
 import pickle
-from kroml.utils.logger import Logger
-from kroml.utils.config_parser import ConfigParser
+from utils.logger import Logger
+from utils.config_parser import ConfigParser
 
 logger = Logger(__name__)
 
@@ -44,7 +44,7 @@ class VariableContext:
         :return object: Object stored in variable context
         """
         return self.object_dict.get(key, None)
-
+        
     def set_object(self, key: str, obj: object, replace: bool = False) -> None:
         """
         Stores an object in variable context dictionary under specific key.
@@ -67,7 +67,7 @@ class VariableContext:
             else:
                 raise Exception("Trying setting on existing value! KEY=\"{}\"\n"
                                 "Use parameter replace=True or call del_object(key) first.".format(key))
-
+                
     def del_object(self, key: str) -> bool:
         """
         Deletes a key from dictionary with corresponding object.
@@ -77,9 +77,10 @@ class VariableContext:
                       Returns False if key was not present in dictionary and thus could not be deleted.
         """
         if key in self.object_dict:
-            del self.object_dict[key]
+            del(self.object_dict[key])
             return True
-        return False
+        else:
+            return False
 
     def save_context(self):
         """
@@ -137,11 +138,6 @@ class VariableContext:
         return self.run_status_dict
 
     def set_module_status(self, module: str, value: bool):
-        """
-        :param module:
-        :param value:
-        :return:
-        """
         if self.run_status_dict[module] is None:
             self.run_status_dict[module] = value
         else:

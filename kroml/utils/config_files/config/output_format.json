@@ -1,0 +1,77 @@
+{
+  "output_strategies" : {
+    "strategy1": [
+      {
+        "original_name": "CustomerKey",
+        "final_name": "CusKey",
+        "visible": 1
+      },
+      {
+        "original_name": "Net Price",
+        "final_name": "Price",
+        "visible": 1
+      },
+      {
+        "original_name": "Unit Cost",
+        "final_name": "Cost",
+        "visible": 1
+      },
+      {
+        "original_name": "ProductKey",
+        "final_name": "Key",
+        "visible": 0
+      }
+    ],
+    "strategy2": [
+      {
+        "original_name": "CusKey",
+        "final_name": "CK",
+        "visible": 1
+      },
+      {
+        "original_name": "Price",
+        "final_name": "NP",
+        "visible": 1
+      },
+      {
+        "original_name": "Key",
+        "final_name": "Key",
+        "visible": 0
+      }
+    ],
+    "strategy3": [
+      {
+        "original_name": "CusKey",
+        "final_name": "sdadsa",
+        "visible": 1
+      },
+      {
+        "original_name": "Price",
+        "final_name": "NP",
+        "visible": 0
+      },
+      {
+        "original_name": "Key",
+        "final_name": "Key",
+        "visible": 0
+      }
+    ],
+    "strategy_wrong": [
+      {
+        "original_name": "CusKeyz",
+        "final_name": "sdadsa",
+        "visible": 1
+      },
+      {
+        "original_name": "Price",
+        "final_name": "NP",
+        "visible": 1
+      },
+      {
+        "original_name": "Key",
+        "final_name": "Key",
+        "visible": 0
+      }
+    ]
+  }
+}

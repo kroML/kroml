@@ -1,0 +1,15 @@
+{
+  "queries": {
+    "query1": {
+      "variable_name": "framework1",
+      "table": "new_table",
+      "format_strategy": "db_strategy"
+    },
+    "query2": {
+      "variable_name": "framework2",
+      "table": "new_table",
+      "condition": "id < 6",
+      "format_strategy": "db_strategy"
+    }
+  }
+}

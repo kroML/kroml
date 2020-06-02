@@ -1,0 +1,128 @@
+{
+  "input_strategies" : {
+    "strategy1": [
+      {
+        "original_name": "CustomerKey",
+        "final_name": "CusKey",
+        "visible": 1
+      },
+      {
+        "original_name": "Net Price",
+        "final_name": "Price",
+        "visible": 1
+      },
+      {
+        "original_name": "Unit Cost",
+        "final_name": "Cost",
+        "visible": 1
+      },
+      {
+        "original_name": "ProductKey",
+        "final_name": "Key",
+        "visible": 1
+      }
+    ],
+    "strategy2": [
+      {
+        "original_name": "CusKey",
+        "final_name": "CusKey",
+        "visible": 1
+      },
+      {
+        "original_name": "Key",
+        "final_name": "Key",
+        "visible": 1
+      },
+      {
+        "original_name": "Price",
+        "final_name": "Price",
+        "visible": 0
+      }
+    ],
+      "test_strategy1": [
+      {
+        "original": "ID",
+        "final_name": "id",
+        "visible": 1
+      },
+      {
+        "original_name": "Strategy",
+        "final_name": "ST",
+        "visible": 1
+      },
+      {
+        "original_name": "Reason",
+        "final_name": "Reason",
+        "visible": 0
+      }
+    ],
+    "db_strategy": [
+      {
+        "original_name": "name",
+        "final_name": "name",
+        "visible": 1
+      },
+      {
+        "original_name": "codename",
+        "final_name": "codename",
+        "visible": 1
+      },
+      {
+        "original_name": "id",
+        "final_name": "id",
+        "visible": 0
+      }
+    ],
+    "AzD_LDA_strategy": [
+      {
+        "original_name": "INPUT1",
+        "final_name": "INPUT1",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT2",
+        "final_name": "INPUT2",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT3",
+        "final_name": "INPUT3",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT4",
+        "final_name": "INPUT4",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT5",
+        "final_name": "INPUT5",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT6",
+        "final_name": "INPUT6",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT7",
+        "final_name": "INPUT7",
+        "visible": 1
+      },
+          {
+        "original_name": "INPUT8",
+        "final_name": "INPUT8",
+        "visible": 1
+      },    {
+        "original_name": "INPUT9",
+        "final_name": "INPUT9",
+        "visible": 1
+      },
+          {
+        "original_name": "OUTPUT1",
+        "final_name": "OUTPUT",
+        "visible": 1
+      }
+    ]
+  }
+}
